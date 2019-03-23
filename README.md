@@ -22,8 +22,3 @@ ver.1 - Simple
 - node_modules
 - Configuring PostCSS
 - Testing
-
-### ~ing (will add)
-- 1 more page
-- apply JS for like Pinterest UI
-- etc
