@@ -1,0 +1,35 @@
+{
+  "name": "social-network",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel social-network.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "news",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trapa-Eureka/social-network.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Trapa-Eureka/news/social-network"
+  },
+  "homepage": "https://github.com/Trapa-Eureka/social-network#readme",
+  "dependencies": {
+    "postcss-preset-env": "^6.6.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      },
+      "postcss-grid-kiss": true
+    }
+  },
+  "devDependencies": {
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-grid-kiss": "^2.1.2"
+  }
+}
