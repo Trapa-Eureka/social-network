@@ -1,3 +1,7 @@
+### complete work screen
+
+![social_network](./image/social_network.png)
+
 # News App
 
 ver.1 - Simple

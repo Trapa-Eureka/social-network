@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 40px 10px 10px 10px;
+    padding: 35px 10px 15px 10px;
     margin-bottom: 30px;
     z-index: 2;
     position: relative;
@@ -39,12 +39,15 @@ body {
     fill: #fff;
 }
 .header .header__title {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-left: 10px;
 }
 .header__title span:first-child {
     display: block;
+    margin-bottom: 5px;
 }
 .header__title span:last-child {
     margin-left: 15px;
@@ -66,9 +69,21 @@ body {
     bottom: 40px;
     right: 15px;
 }
-
+.header .header__icons {
+    margin-bottom: 6px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+/*
 .header__icons span {
     margin-left: 15px;
+}
+*/
+.header__icons svg {
+    width: 18px; 
+    height: 18px; 
 }
 .header__icons span:first-child {
     margin: 0;
@@ -82,9 +97,19 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 25px;
+    _border-bottom: 0.5px solid var(--greyColor);
+    _margin-bottom: 50px;
+}
+
+.main .border__bottom {
+    display: block;
+    position: relative;
     border-bottom: 0.5px solid var(--greyColor);
     margin-bottom: 50px;
+    left: 30px;
+    width: 90%;
 }
+
 .main__header .main__header-column svg {
     margin-right: 34px;
 }
@@ -100,9 +125,13 @@ body {
     color: var(--greyColor);
     text-transform: uppercase;
 }
+
 .main__header svg,
 .match-item svg {
     fill: var(--greyColor);
+}
+.match-item:nth-child(2) svg, .match-item:nth-child(4) svg {
+    fill: #a772f4;
 }
 
 .main .match-list {
@@ -124,15 +153,27 @@ body {
 }
 .match-item__info {
     font-weight: 600;
+    padding: 8px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 .match-item__info .match-item__name {
     display: block;
-    margin-bottom: 10px;
     font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 .match-item__info .match-item__friends {
     text-transform: uppercase;
     color: var(--greyColor);
+    display: flex;
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 .match-item .match-item__icon {
     align-self: center;
